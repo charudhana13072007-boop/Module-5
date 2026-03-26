@@ -21,9 +21,35 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
+~~~
+
+
+class Demo:
+    
+    def __init__(self):
+        self.status = "Alive"
+        print("Object created, status:", self.status)
+
+    
+    def __del__(self):
+        print("Object is being destroyed")
+
+
+obj = Demo()
+
+
+del obj
+
+print("End of program")
+~~~
 
 ## 🧪 Output
+Object created, status: Alive
+
+Object is being destroyed
+
+End of program
 
 ## Result
+The program successfully demonstrates how a constructor (__init__) initializes an object and how a destructor (__del__) is called when the object is deleted or goes out of scope.
 
